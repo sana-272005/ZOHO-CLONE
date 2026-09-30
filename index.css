@@ -26,13 +26,15 @@ body {
     font-family: 'Zoho_Puvi_Regular', sans-serif;
     overflow-x: hidden;
 }
-
+.footer-nav-container {
+  display: none;
+}
 #prodCheck,
 #solCheck,
 #cusCheck,
 #partCheck,
 #resCheck,
-#searchCheck {
+#searchCheck,#menu-toggle,#m-Cus,#m-Part,#m-Res,#m-Sol{
     display: none;
 }
 
@@ -3055,6 +3057,7 @@ blockquote {
     left: 0;
     width: 100%;
     z-index: 10000;
+    display:block;
   }
   .menu-checkbox, .sub-check { display: none; }
   .nav-dropdown-box {
@@ -3127,741 +3130,72 @@ blockquote {
   .hamburger-icon .bar { height: 2px; background: #000; }
   .signup-btn { color: #e42527; font-weight: 700; font-size: 13px; text-decoration: none; }
 }
-
+/* TABLET - MUST BE AT BOTTOM OF FILE */
 @media (min-width: 768px) and (max-width: 991.99px) {
   header {
-    height: 62px;
-    padding: 0 20px;
+    height: 54px;
+    padding: 0 16px 0 18px;
+    background: #fff;
+    display: flex;
     justify-content: space-between;
-  }
-
-  /* Hide middle links and extra right items */
-  .links,
-  .languages,
-  .right .signup,
-  #productsMegaMenu,
-  #solMegaMenu,
-  #cusMegaMenu,
-  #partMegaMenu,
-  #resMegaMenu {
-    display: none !important;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1005;
   }
 
   .header_left {
-    margin: 0;
+    display: flex;
+    gap: 22px;
+    align-items: center;
   }
 
   .zoho_logo {
-    height: 62px;
+    height: 54px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
-  .zoho_logo .chain {
-    width: 120px;
+  .chain {
+    width: 82px;
     height: 34px;
+    position: relative;
+    display: flex;
   }
 
-  .zoho_logo .chain .box {
-    width: 26px;
-    height: 26px;
-    border-width: 3px;
-  }
-
-  .zoho_logo .chain .box.red { left: 0; }
-  .zoho_logo .chain .box.green { left: 22px; }
-  .zoho_logo .chain .box.blue { left: 43px; }
-  .zoho_logo .chain .box.yellow { left: 63px; }
-
-  .zoho_logo .zoho-text {
-    font-size: 7px;
-    letter-spacing: 6px;
-    margin: 2px 0 0 2px;
-  }
-
-  .right {
-    width: auto;
-    gap: 22px;
-    justify-content: flex-end;
-  }
-
-  .right .signin {
-    color: #E42527;
-    font-size: 15px;
-    font-weight: 500;
-  }
-
-  .search-wrapper {
+  .box {
     width: 22px;
     height: 22px;
+    border-width: 2.5px;
+    border-radius: 5px;
   }
 
-  .search-icon img {
-    width: 40px;
+  .red { left: 0; transform: rotateZ(-10deg); }
+  .green { left: 18px; transform: rotateZ(19deg); }
+  .blue { left: 36px; transform: rotateZ(-10deg); }
+  .yellow { left: 54px; }
+
+  .zoho-text {
+    font-size: 6px;
+    letter-spacing: 4px;
+    margin-left: 8px;
+    margin-top: -2px;
   }
 
-  /* search bar position for tablet */
-  #searchBar {
-    top: 62px;
-  }
-
-  
-    #hero {
-        margin-top: 62px;
-        padding: 32px 16px 20px;
-        background-size: cover;
-        background-position: top center;
-    }
-
-    #hero h1 {
-        font-size: 28px;
-        line-height: 1.25;
-        padding: 0 10px;
-    }
-
-    #hero h1 br {
-        display: none;
-    }
-
-    #hero .line {
-        margin: 14px auto;
-    }
-
-    #hero>p {
-        font-size: 15px;
-        line-height: 1.6;
-        padding: 0 12px;
-    }
-
-    #hero>p br {
-        display: none;
-    }
-
-    .btn1 {
-        width: 92%;
-        padding: 14px 10px;
-        font-size: 13px;
-        margin-top: 20px;
-    }
-
-    .CARD {
-        flex-direction: column;
-        padding: 10px;
-        margin-top: 28px;
-        gap: 12px;
-        border-radius: 12px;
-    }
-
-    .card-left {
-        width: 100%;
-        padding: 48px 18px;
-        border-radius: 10px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .card-left h2 {
-        font-size: 26px;
-        margin-top: 8%;
-        line-height: 1.2;
-    }
-
-    .card-left>p {
-        font-size: 13px;
-        margin-top: 10px;
-    }
-
-    .zia-btn {
-        padding: 12px 18px;
-        font-size: 11px;
-        margin-top: 16px;
-    }
-
-    .card-right {
-        width: 100%;
-        padding: 18px 14px;
-    }
-
-    .top_section {
-        flex-direction: row;
-        justify-content: space-between;
-        font-size: 12px;
-        gap: 10px;
-    }
-
-    .top_section a {
-        font-size: 11px;
-    }
-
-    .apps {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        margin-top: 20px;
-    }
-
-    .app {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .app .content {
-        text-align: center;
-    }
-
-    .app h4 {
-        font-size: 15px;
-    }
-
-    .content p {
-        font-size: 11px;
-        line-height: 1.4;
-        overflow: hidden;
-    }
-
-    .app img {
-        width: 32px;
-        height: 32px;
-    }
-
-    .content1 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content1 h4 {
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 0.8px;
-        margin: 16px 0 6px;
-        color: #111;
-    }
-
-    .content1 h2 {
-        font-size: 30px;
-        font-weight: 400;
-        margin-bottom: 12px;
-        color: #000;
-    }
-
-    .content1 p {
-        font-size: 14.5px;
-        line-height: 1.6;
-        padding: 0 14px;
-        text-align: center;
-        color: #111;
-        opacity: 1;
-    }
-
-    .content1 p b {
-        display: block;
-        font-weight: 600;
-        margin-bottom: 4px;
-    }
-
-    .content1 button {
-        background: #e42527;
-        color: #fff;
-        border: none;
-        padding: 12px 22px;
-        font-size: 12px;
-        font-weight: 700;
-        margin-top: 18px;
-        border-radius: 2px;
-        width: auto;
-        min-width: 160px;
-    }
-
-
-
-    .zoho_one_right .circle {
-        width: 36px;
-        height: 36px;
-        background: #000;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto 16px;
-    }
-
-    .zoho_one_right blockquote {
-        font-size: 14px;
-        line-height: 1.6;
-        padding: 0 20px;
-        margin: 0 0 18px;
-        text-align: center;
-        color: #111;
-    }
-
-    .zoho_one_right .about {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .zoho_one_right .about img {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-    }
-
-    .zoho_one_right .content2 h3 {
-        font-size: 13px;
-        margin: 0;
-    }
-
-    .zoho_one_right .content2 p {
-        font-size: 11px;
-        margin-top: 2px;
-    }
-
-    #brand {
-        padding: 28px 0;
-        overflow: hidden;
-    }
-
-    #brand h4 {
-        font-size: 11px;
-        text-align: center;
-    }
-
-    .brand-slide {
-        gap: 30px;
-        margin-top: 18px;
-    }
-
-    #stories {
-        width: 100%;
-        height: auto;
-        padding: 20px 0 40px;
-        background: #fff;
-        overflow: visible;
-        display: block;
-    }
-
-    #stories>h4 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 11px;
-        color: #226DB4;
-        letter-spacing: 0.5px;
-    }
-
-    #stories .carousel {
-        width: 92%;
-        height: auto;
-        margin: 0 auto;
-        border-radius: 16px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background: #fff;
-        padding: 6px;
-        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-        overflow: visible;
-    }
-
-    #stories .carousel-inner {
-        border-radius: 12px;
-        overflow: hidden;
-    }
-
-    #stories .carousel-item {
-        height: auto;
-    }
-
-    #stories .carousel-item img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 10px;
-        display: block;
-    }
-
-    #stories .carousel-control-prev,
-    #stories .carousel-control-next {
-        width: 32px;
-        height: 32px;
-        background: #fff;
-        border-radius: 50%;
-        border: 1px solid #e5e5e5;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 1;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-    }
-
-    #stories .carousel-control-prev {
-        left: 8px;
-    }
-
-    #stories .carousel-control-next {
-        right: 8px;
-    }
-
-    #stories .carousel-control-prev-icon,
-    #stories .carousel-control-next-icon {
-        filter: invert(1);
-        width: 14px;
-        height: 14px;
-    }
-
-    #enterprise {
-       
-        padding: 36px 20px 32px;
-        gap: 0;
-        text-align: center;
-        background: #f9fafb;
-        align-items: center;
-    }
-
-    .enterprise_left {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 0;
-    }
-
-    .enterprise_left>div:first-child,
-    .enterprise_left img {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .enterprise_left img {
-        width: 48px;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .content3 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .content3 h4 {
-        font-size: 11px;
-        letter-spacing: 0.8px;
-        margin-top: 16px;
-        margin-bottom: 6px;
-        text-align: center;
-    }
-
-    .content3 h2 {
-        font-size: 27px;
-        font-weight: 400;
-        line-height: 1.2;
-        margin-bottom: 12px;
-        text-align: center;
-        color: #000;
-    }
-
-    .content3 p {
-        font-size: 14px;
-        line-height: 1.6;
-        padding: 0 10px;
-        text-align: center;
-        margin-bottom: 18px;
-        color: #333;
-    }
-
-    .content3 button {
-        border: 1px solid #2d7abf;
-        background: transparent;
-        color: #2d7abf;
-        padding: 9px 18px;
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        border-radius: 3px;
-        margin: 0 auto;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        width: auto;
-    }
-
-    .enterprise-right {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 36px;
-    }
-
-    .enterprise-right .circle {
-        display: none;
-    }
-
-    .enterprise-right blockquote {
-        font-size: 13.5px;
-        line-height: 1.6;
-        font-style: italic;
-        color: #333;
-        padding: 0 16px;
-        margin: 0 0 20px;
-        text-align: center;
-        font-weight: 300;
-    }
-
-    .enterprise-right .about {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        text-align: left;
-        margin-top: 0;
-    }
-
-    .enterprise-right .about img {
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .enterprise-right .content2 {
-        margin-top: 0;
-        text-align: left;
-    }
-
-    .enterprise-right .content2 h3 {
-        font-size: 13px;
-        font-weight: 600;
-        margin: 0;
-        color: #000;
-    }
-
-    .enterprise-right .content2 p {
-        font-size: 11px;
-        line-height: 1.3;
-        margin: 3px 0 0;
-        color: #555;
-    }
-
-    .enterprise-right .content2 a,
-    .enterprise-right>a {
-        display: block;
-        text-align: center;
-        margin-top: 16px;
-        font-size: 11px;
-        font-weight: 600;
-        color: #2d7abf;
-        text-decoration: none;
-        letter-spacing: 0.5px;
-    }
-
-    #zoholics {
-    width: 100%;
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #f5f5f7;
-}
-
-#zoholics .box {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 92%;
-    margin: -40px auto 0;
-    padding: 28px 18px 24px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-}
-
-#zoholics .box > h2 {
-    font-size: 22px;
-    line-height: 1.3;
-    padding: 0 10px;
-    margin-top: 0;
-}
-
-#zoholics .BOX {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    margin-top: 24px;
-}
-
-#zoholics .BOX1 {
-    gap: 12px;
-    align-items: flex-start;
-    text-align: left;
-}
-
-#zoholics .BOX1 img {
-    width: 28px;
-    height: 28px;
-    margin-top: 2px;
-}
-
-#zoholics .box_content > h3 {
-    font-size: 16px;
-    line-height: 1.3;
-    margin-bottom: 6px;
-}
-
-#zoholics .box_content > p {
-    font-size: 13px;
-    line-height: 1.5;
-}
-#made-india {
-    margin-top: 20px;
-    padding: 36px 16px 36px;
-}
-
-#made-india h2 {
-    font-size: 22px;
-    line-height: 1.3;
-}
-
-#made-india h2 br {
-    display: none;
-}
-
-.green-line {
-    margin: 14px auto 24px;
-}
-
-.stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-    margin-bottom: 30px;
-    max-width: 100%;
-}
-
-.stat {
-    padding: 18px 12px;
-    text-align: center;
-}
-
-
-
-.stat:last-child {
-    grid-column: span 2;
-  
-}
-
-.stat h3 {
-    font-size: 28px;
-}
-
-.stat p {
-    font-size: 11px;
-    line-height: 1.3;
-}
-
-.more-btn {
-    font-size: 12px;
-    padding: 10px 18px;
-}
-
-#footer-cta {
-    padding: 28px 14px 20px;
-    background: #f8f9fb;
-  }
-
-  .cta-top {
-    margin-bottom: 30px;
-  }
-
-  .cta-top h2 {
-    font-size: 22px;
-    line-height: 1.3;
-  }
-
-  .cta-top h2 span {
-    font-size: 22px;
-  }
-
-  .footer-links {
-    display: block;
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding:20px 1px;
-  }
-
-  .footer-links .col {
-    margin-bottom: 22px;
-    width: 100%;
-  }
-
-  .footer-links .col h4 {
-    font-size: 20px;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 10px;
-  }
-
-  .footer-links .col a {
-    display: inline-block;
-    font-size: 15px;
-    color: #333;
-    font-weight: 400;
-    margin-right: 14px;
-    margin-bottom: 6px;
-    line-height: 1.6;
-  }
-
-  .footer-links .col .label {
-    display: inline-block;
-    font-size: 10.5px;
-    font-weight: 700;
-    color: #000;
-    margin-right: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .footer-links .col:last-child {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 18px;
-    align-items: center;
-  }
-
-  .footer-links .col:last-child h4 {
-    width: 100%;
-  }
-
-  .footer-links .col:last-child .label {
-    margin-bottom: 2px;
-  }
-
-  .footer-links .col:last-child a.underline {
-    font-size: 10px;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-  }
-
-  .footer-links .col:last-child .dotted {
-    display: none;
-  }
-
-  .footer-links .col:last-child a.blue-link {
-    font-size: 10.5px;
-    color: #0a5bb4;
-    font-weight: 500;
-    margin-top: 4px;
-  }
-
-  .footer-links .col:last-child a.blue-link i {
-    font-size: 8px;
-    margin-left: 3px;
-  }
-
-  .footer-nav-container {
-    display: none;
-  }
+  .links { display: block; margin: 0; }
+  .links ul { display: flex; gap: 14px; list-style: none; align-items: center; }
+  .links ul li label { font-size: 13px; color: #000; font-weight: 500; cursor: pointer; white-space: nowrap; }
+  .links ul li label i { font-size: 9px; margin-left: 3px; }
+
+  .right { width: auto; margin-left: auto; gap: 0; }
+  .search-wrapper, .languages, .right .signup, #searchBar { display: none; }
+  .right .signin { color: #E42527; font-size: 14px; font-weight: 500; display: block; }
+
+  #productsMegaMenu, #solMegaMenu, #cusMegaMenu, #partMegaMenu, #resMegaMenu { display: none; }
+  #prodCheck:checked ~ #productsMegaMenu, #solCheck:checked ~ #solMegaMenu { display: none; }
+
+  .footer-nav-container { display: none; }
 }
