@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./msmes.css">
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="prodCheck">
+        <input type="checkbox" id="searchCheck">
+
+        <div class="header_left">
+            <div class="zoho_logo">
+                <div class="chain">
+                    <div class="box red"></div>
+                    <div class="box green"></div>
+                    <div class="box blue"></div>
+                    <div class="box yellow"></div>
+                </div>
+                <div class="zoho-text">ZOHO</div>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li>
+                        <label for="prodCheck" class="prod-label">All Products <i
+                                class="fa-solid fa-angle-down"></i></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="productsMegaMenu">
+            <div class="mega-top">
+                <div class="mega-tabs">
+                    <button class="active">Apps</button>
+                    <button>Suites</button>
+                    <button>Marketplace</button>
+                    <span class="ai-pill"><i class="fa-solid fa-sparkles"></i>AI</span>
+                    <span class="divider"></span>
+                    <a href="#" class="explore-link">EXPLORE ALL PRODUCTS <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <label for="prodCheck" class="close-btn"><i class="fa-solid fa-xmark"></i></label>
+            </div>
+
+            <div class="mega-body">
+                <div class="mega-left">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="I'm looking for...">
+                    </div>
+                    <ul class="left-menu">
+                        <li class="active">Recent Launches <i class="fa-solid fa-chevron-right"></i></li>
+                        <li>Sales</li>
+                        <li>Marketing</li>
+                        <li>Commerce and POS</li>
+                        <li>Service</li>
+                        <li>Finance</li>
+                        <li>Education</li>
+                        <li>ERP</li>
+                        <li>Email, Storage, and Collaboration</li>
+                        <li>Human Resources</li>
+                        <li>Legal</li>
+                        <li>Security and IT Management</li>
+                        <li>BI and Analytics</li>
+                        <li>Project Management</li>
+                        <li>Developer Platforms</li>
+                        <li>IoT</li>
+                    </ul>
+                    <button class="btn-explore">EXPLORE ALL PRODUCTS <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="mega-right">
+                    <h2>Recent Launches</h2>
+                    <div class="launch-grid">
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/agent.png">
+                                <h4>Zoho<br> <b>Zia Agents</b></h4>
+                            </div>
+                            <p>Autonomous AI agents that execute tasks across every department, at scale.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/class.png">
+                                <h4>Zoho<br><b> Classes</b></h4>
+                            </div>
+                            <p>AI-powered academic LMS for modern teaching and learning.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4>Zoho<br><b>CommandCenter</b></h4>
+                            </div>
+                            <p>Design dynamic journeys and automate contextual responses at every stage.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4> <b>Linkthread</b><br>by Zoho Social</h4>
+                            </div>
+                            <p>Create a branded link-in-bio page to grow your online presence.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4>Zoho<br> <b>Vertical Studio</b></h4>
+                            </div>
+                            <p>Build secure, scalable, and multi-tenant apps for any industry.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4>Zoho<br><b>Creator Plus</b></h4>
+                            </div>
+                            <p>Unified platform for the entire app development lifecycle.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4>Zoho<br><b>Project Plus</b></h4>
+                            </div>
+                            <p>Unified project management platform for intelligent, data-driven work.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="search-wrapper">
+                <label for="searchCheck" class="search-icon">
+                    <img src="./images/glass.png" alt="">
+                </label>
+                <label for="searchCheck" class="search-close-icon"><i class="fa-solid fa-xmark"
+                        style="color:#E42527;"></i></label>
+            </div>
+
+        </div>
+
+        <div id="searchBar">
+            <div class="search-input-box">
+                <input type="text" placeholder="Search for product overviews, FAQs, and more...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+    <div id="empower">
+        <div class="empower-nav">
+            <div class="empower-logo">
+                <img src="./images/empower.png" alt="">
+                <div class="emp-logo-text"><span>Zoho</span><b>Empower</b></div>
+            </div>
+            <a href="#" class="reach-link">Reach us</a>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="empower-hero">
+            <h4>Empowering small businesses</h4>
+            <h1>Today's resilience,<br>tomorrow's possibilities</h1>
+            <div class="red-line"></div>
+            <p>
+                We at Zoho are on a mission to empower small businesses to keep going and keep growing<br>
+                —no matter what. Through our Zoho Empower program, we give MSMEs (micro, small, and<br>
+                medium enterprises) a technological leg up to help them unlock more opportunities and<br>
+                boost their local economies. If you're part of an organization that's also empowering<br>
+                businesses and interested in collaborating with us, then join us!
+            </p>
+            <a href="#" class="collab-btn">COLLABORATE WITH US <i class="fa-solid fa-chevron-right"></i></a>
+        </section>
+    </div>
+
+    <section class="powerful-section">
+        <div class="powerful-left">
+            <h2>Ever powerful,<br>never overwhelming</h2>
+            <div class="cyan-line"></div>
+            <p>
+                Is digital transformation overwhelming the small- and medium-<br>
+                sized organizations you work with? We know these businesses<br>
+                have a lot going on, and accommodating new technology can<br>
+                be taxing. However, properly embedding technology into<br>
+                every aspect of the organization will allow them to be more<br>
+                customer-focused, sell their products globally, break internal<br>
+                silos, and adapt to change more easily. The key is to start small<br>
+                and slowly build momentum.
+            </p>
+        </div>
+        <div class="powerful-right">
+            <img src="./images/powerful.png" alt="powerful illustration">
+        </div>
+    </section>
+
+    <section class="trust-section">
+        <h3>BUSINESS THAT TRUST ZOHO</h3>
+        <div class="red-line"></div>
+        <div class="trust-logos">
+            <div class="logo-card"><span>Urban<b>Coach</b></span></div>
+            <div class="logo-card"><img src="./images/hrtailor.png" alt="HKTailor"></div>
+            <div class="logo-card"><img src="./images/offineeds.png" alt="OffiNeeds"></div>
+            <div class="logo-card"><img src="./images/axa.png" alt="TAXAJ"></div>
+            <div class="logo-card"><img src="./images/forade.png" alt="FORADE"></div>
+        </div>
+    </section>
+
+    <section class="apps-power-section">
+        <div class="apps-left">
+            <h2>Our apps are powerful,<br>easy to use, and help fast-<br>track automation for every<br>business process
+            </h2>
+            <div class="red-line"></div>
+            <div class="apps-illustration">
+                <img src="./images/buisness.png" alt="apps illustration">
+            </div>
+        </div>
+
+        <div class="apps-right">
+            <ul>
+                <li>Transform offline businesses into online stores</li>
+                <li>File taxes and improve cash-flow position</li>
+                <li>Sell smarter, in-person and virtually</li>
+                <li>Provide stellar customer experience</li>
+                <li>Manage and support employees, wherever they're located</li>
+                <li>Improve online presence, and make products/services<br>discoverable globally</li>
+                <li>Stay on the same page: Collaborate on documents in real time</li>
+                <li>Go paperless—create, store, and share files with ease</li>
+                <li>Keep up with tasks and projects</li>
+                <li>Digitally sign contracts and other documents in a click</li>
+                <li>Build cohesion with team chat and video conferencing tools</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="mindset-section">
+        <div class="mindset-card">
+            <div class="mindset-icon">
+                <img src="./images/gear-icon.png" alt="icon">
+            </div>
+            <h2>Going digital requires the right tools<br>and a major shift in mindset.</h2>
+            <p>Are you also passionate about strengthening the<br>small business ecosystem?</p>
+            <a href="#" class="partner-btn">PARTNER WITH US <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <div class="partners-top">
+            <h2>Our partners</h2>
+            <div class="cyan-line"></div>
+            <p>We provide more than access to digital tools. We work with government bodies and<br>associations to make
+                MSMEs digital-ready.</p>
+        </div>
+
+        <div class="partners-card">
+            <div class="partner-logos">
+                <div class="p-logo"><img src="./images/partner1.png" alt=""></div>
+                <div class="p-logo"><img src="./images/partner2.png" alt="Stanford Seed"></div>
+                <div class="p-logo empty"></div>
+                <div class="p-logo"><img src="./images/partner3.png" alt=""></div>
+                <div class="p-logo"><img src="./images/partner4.png" alt="HexGn"></div>
+                <div class="p-logo"><img src="./images/partner5.png" alt="ALEAP"></div>
+            </div>
+            <div class="partner-nominate">
+                <h3>Is your association<br>not listed here?</h3>
+                <p>Nominate them, if you'd like them to<br>partner with us.</p>
+                <a href="#" class="nominate-btn">NOMINATE <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-red-line"></div>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <input type="checkbox" id="f1" checked>
+                <label for="f1" class="faq-question">What are the products included under Zoho Empower? <span
+                        class="plus">+</span><span class="minus">-</span></label>
+                <div class="faq-answer">
+                    <p>Zoho Books, Bigin by Zoho CRM, Zoho Workplace, Zoho Invoice, Zoho Commerce, Zoho Inventory, Zoho
+                        Sites, TeamInbox by Zoho Mail, Zoho Sign, Zoho Meeting, Zoho Campaigns, Zoho SalesIQ, Zoho
+                        People, Zoho Payroll, Zoho Social, Zoho Cliq, Zoho Vault and Zoho OneAuth.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="f2">
+                <label for="f2" class="faq-question">Do all the credits have an expiration date? <span
+                        class="plus">+</span><span class="minus">-</span></label>
+                <div class="faq-answer">
+                    <p>Yes, all promotional wallet credits have an expiration date. Please check your wallet for
+                        validity.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="f3">
+                <label for="f3" class="faq-question">Can these credits be encashed? <span class="plus">+</span><span
+                        class="minus">-</span></label>
+                <div class="faq-answer">
+                    <p>No, wallet credits cannot be encashed. They can only be used for Zoho product purchases.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="f4">
+                <label for="f4" class="faq-question">I'm having trouble claiming the credits, what should I do? <span
+                        class="plus">+</span><span class="minus">-</span></label>
+                <div class="faq-answer">
+                    <p>Please contact our support team at support@zoho.com with your account details.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="f5">
+                <label for="f5" class="faq-question">Is this offer limited to certain regions? <span
+                        class="plus">+</span><span class="minus">-</span></label>
+                <div class="faq-answer">
+                    <p>Yes, this offer is currently available only for India region customers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="f6">
+                <label for="f6" class="faq-question">Can the customer use the available promotional wallet credit for
+                    the purchase of Zoho One? <span class="plus">+</span><span class="minus">-</span></label>
+                <div class="faq-answer">
+                    <p>Yes, wallet credits can be applied towards Zoho One purchase as per terms.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="f7">
+                <label for="f7" class="faq-question">Any exception for the usage of credits? <span
+                        class="plus">+</span><span class="minus">-</span></label>
+                <div class="faq-answer">
+                    <p>Credits cannot be used for add-ons, domain purchases and marketplace apps.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="faq-btn-wrap">
+            <a href="#" class="faq-btn">SHOW MORE FAQ'S <i class="fa-solid fa-angle-down"></i></a>
+        </div>
+    </section>
+
+    <section id="footer-cta">
+        <div class="cta-top">
+            <h2>Write to us at <span style="color:#226DB4;font-weight:bold;">info@zohoempower.com</span><br><span>if
+                    you'd like to reach us</span></h2>
+            <div class="faq-red-line"></div>
+
+
+        </div>
+
+        <div class="footer-links">
+            <div class="col">
+                <h4>Apps and Extensions</h4>
+                <a href="#">Mobile Apps</a>
+                <a href="#">Desktop Apps</a>
+                <a href="#">Developer Center</a>
+                <a href="#">Google Workspace Integration</a>
+                <a href="#">Microsoft 365 Integration</a>
+                <a href="#">Apps for Apple Watch</a>
+                <a href="#">Product Integrations</a>
+                <a href="#">Browser Extensions</a>
+                <a href="#">Compare Alternatives</a>
+            </div>
+            <div class="col">
+                <h4>Learn</h4>
+                <a href="#">Announcements Hub</a>
+                <a href="#">Training and Certification</a>
+                <a href="#">Academy</a>
+                <a href="#">Blog</a>
+                <a href="#">Knowledge Base</a>
+                <a href="#">Zia</a>
+                <a href="#">The Long Game</a>
+                <a href="#">Newsletter</a>
+            </div>
+            <div class="col">
+                <h4>Community</h4>
+                <a href="#">User Community</a>
+                <a href="#">Customer Stories</a>
+                <a href="#">Work With a Partner</a>
+                <a href="#">Affiliate Program</a>
+                <a href="#">Humans of Zoho</a>
+            </div>
+            <div class="col">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Our Story</a>
+                <a href="#">Press</a>
+                <a href="#">Events</a>
+                <a href="#">Branding Guidelines</a>
+                <a href="#">Zoho Schools</a>
+                <a href="#">Service Status</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="col">
+                <h4>Contact Sales</h4>
+                <p class="label">Phone</p>
+                <a href="#" class="underline">1800 103 1123</a>
+                <a href="#" class="underline">1800 572 3535</a>
+                <p class="label">Email</p>
+                <a href="#" class="underline">sales@zohocorp.com</a>
+                <div class="dotted"></div>
+                <a href="#" class="blue-link">Support <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#" class="blue-link">Talk to Concierge <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer-top">
+        <div class="social-row">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="yt"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="li"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="policy-links">
+            <a href="#">Contact Us</a> <span>|</span>
+            <a href="#">Security</a> <span>|</span>
+            <a href="#">Compliance</a> <span>|</span>
+            <a href="#">IPR Complaints</a> <span>|</span>
+            <a href="#">Anti-spam Policy</a> <span>|</span>
+            <a href="#">Terms of Service</a> <span>|</span>
+            <a href="#">Privacy Policy</a> <span>|</span>
+            <a href="#">Refund Policy</a> <span>|</span>
+            <a href="#">Trademark Policy</a> <span>|</span>
+            <a href="#">Cookie Policy</a> <span>|</span>
+            <a href="#">GDPR Compliance</a> <span>|</span>
+            <a href="#">Abuse Policy</a>
+        </div>
+    </section>
+
+    <footer id="copyright">
+        <div class="chain small">
+            <div class="box red"></div>
+            <div class="box green"></div>
+            <div class="box blue"></div>
+            <div class="box yellow"></div>
+        </div>
+        <div class="zoho-text-small">ZOHO</div>
+        <p>© 2026, Zoho Corporation Pvt. Ltd. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>

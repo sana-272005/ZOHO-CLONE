@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./developer.css">
+</head>
+
+<body>
+<div class="mob-bottom-bar">
+  <input type="checkbox" id="mobMenuCheck" hidden checked>
+  
+  <label for="mobMenuCheck" class="mob-menu-btn">
+    <span class="icon-ham"></span>
+    <span class="icon-close">✕</span>
+  </label>
+
+  <!-- WHITE BOX ON TOP OF ICON -->
+  <div class="mob-menu-box">
+    <div class="mob-search">
+      <input type="text" placeholder="Search zoho.com">
+      <button>🔍</button>
+    </div>
+
+    <a href="#">AI/ML <span class="new-badge">NEW</span></a>
+    <a href="#" class="has-arrow">Build <span>▾</span></a>
+    <a href="#">Resources</a>
+    <a href="#">Blog</a>
+    <a href="#">Marketplace</a>
+
+    <div class="mob-divider"></div>
+
+    <a href="#" class="red-link">Sign In</a>
+    <a href="#">All Zoho Products</a>
+  </div>
+
+  <a href="#" class="mob-signup">SIGN UP FOR FREE</a>
+</div>
+
+    <header>
+        <input type="checkbox" id="prodCheck">
+        <input type="checkbox" id="solCheck">
+        <input type="checkbox" id="cusCheck">
+        <input type="checkbox" id="partCheck">
+        <input type="checkbox" id="resCheck">
+        <input type="checkbox" id="searchCheck">
+
+        <div class="header_left">
+            <div class="zoho_logo">
+                <div class="chain">
+                    <div class="box red"></div>
+                    <div class="box green"></div>
+                    <div class="box blue"></div>
+                    <div class="box yellow"></div>
+                </div>
+                <div class="zoho-text">ZOHO</div>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li>
+                        <label for="prodCheck" class="prod-label">Products <i
+                                class="fa-solid fa-angle-down"></i></label>
+                    </li>
+                    <li><label for="solCheck" class="sol-label">Solutions<i class="fa-solid fa-angle-down"></i></label>
+                    </li>
+                    <li><label for="cusCheck" class="cus-label">Customers<i class="fa-solid fa-angle-down"></i></label>
+                    </li>
+                    <li><label for="partCheck" class="part-label">Partners<i class="fa-solid fa-angle-down"></i></label>
+                    </li>
+                    <li><label for="resCheck" class="res-label">Resources<i class="fa-solid fa-angle-down"></i></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="productsMegaMenu">
+            <div class="mega-top">
+                <div class="mega-tabs">
+                    <button class="active">Apps</button>
+                    <button>Suites</button>
+                    <button>Marketplace</button>
+                    <span class="ai-pill"><i class="fa-solid fa-sparkles"></i>AI</span>
+                    <span class="divider"></span>
+                    <a href="#" class="explore-link">EXPLORE ALL PRODUCTS <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <label for="prodCheck" class="close-btn"><i class="fa-solid fa-xmark"></i></label>
+            </div>
+
+            <div class="mega-body">
+                <div class="mega-left">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="I'm looking for...">
+                    </div>
+                    <ul class="left-menu">
+                        <li class="active">Recent Launches <i class="fa-solid fa-chevron-right"></i></li>
+                        <li>Sales</li>
+                        <li>Marketing</li>
+                        <li>Commerce and POS</li>
+                        <li>Service</li>
+                        <li>Finance</li>
+                        <li>Education</li>
+                        <li>ERP</li>
+                        <li>Email, Storage, and Collaboration</li>
+                        <li>Human Resources</li>
+                        <li>Legal</li>
+                        <li>Security and IT Management</li>
+                        <li>BI and Analytics</li>
+                        <li>Project Management</li>
+                        <li>Developer Platforms</li>
+                        <li>IoT</li>
+                    </ul>
+                    <button class="btn-explore">EXPLORE ALL PRODUCTS <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="mega-right">
+                    <h2>Recent Launches</h2>
+                    <div class="launch-grid">
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/agent.png">
+                                <h4>Zoho<br> <b>Zia Agents</b></h4>
+                            </div>
+                            <p>Autonomous AI agents that execute tasks across every department, at scale.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/class.png">
+                                <h4>Zoho<br><b> Classes</b></h4>
+                            </div>
+                            <p>AI-powered academic LMS for modern teaching and learning.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4>Zoho<br><b>CommandCenter</b></h4>
+                            </div>
+                            <p>Design dynamic journeys and automate contextual responses at every stage.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4> <b>Linkthread</b><br>by Zoho Social</h4>
+                            </div>
+                            <p>Create a branded link-in-bio page to grow your online presence.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4>Zoho<br> <b>Vertical Studio</b></h4>
+                            </div>
+                            <p>Build secure, scalable, and multi-tenant apps for any industry.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4>Zoho<br><b>Creator Plus</b></h4>
+                            </div>
+                            <p>Unified platform for the entire app development lifecycle.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="launch-card">
+                            <div class="launch-head"><img src="./images/command.png">
+                                <h4>Zoho<br><b>Project Plus</b></h4>
+                            </div>
+                            <p>Unified project management platform for intelligent, data-driven work.</p>
+                            <a href="#">TRY NOW <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="solMegaMenu">
+            <ul>
+                <li><a href="./msmes.html">Zoho for MSMEs</a></li>
+                <li><a href="#">Zoho for Enterprise</a></li>
+                <li><a href="#">Zoho for Startups</a></li>
+                <li><a href="#">Zoho for Nonprofits</a></li>
+                <li><a href="#">Zoho for Retail</a></li>
+                <li><a href="#">Zoho for Healthcare</a></li>
+                <li><a href="#">Zoho for Automotive</a></li>
+            </ul>
+        </div>
+
+        <div id="cusMegaMenu">
+            <ul>
+                <li><a href="#">Customer Stories</a></li>
+                <li><a href="#">User Community</a></li>
+                <li><a href="#">Training and Certification</a></li>
+                <li><a href="./affiliate.html">Affiliate Program</a></li>
+
+            </ul>
+        </div>
+
+        <div id="partMegaMenu">
+            <div class="partner-box">
+                <img src="./images/long-term.png" style="margin-bottom:10px;">
+                <p>Find and work with a Zoho Partner to get expert help.</p>
+                <a href="#" class="p-link">WORK WITH A PARTNER <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="partner-divider"></div>
+            <div class="partner-box">
+                <img src="./images/scale.png" style="margin-bottom:10px;">
+                <p>Scale your business by helping our users worldwide.</p>
+                <a href="./partner.html" class="p-link">BECOME A PARTNER <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <div id="resMegaMenu">
+            <div class="res-col">
+                <h4>LEARN</h4>
+                <a href="#">Announcements Hub</a>
+                <a href="#">Security Solutions</a>
+                <a href="./developer.html">Developer Center</a>
+                <a href="#">Blog</a>
+                <a href="#">Zia</a>
+                <a href="#">Newsletter</a>
+                <a href="#">The Long Game</a>
+            </div>
+            <div class="partner-divider"></div>
+
+            <div class="res-col">
+                <h4>SUPPORT</h4>
+                <a href="#">Knowledge Base</a>
+                <a href="#">Concierge</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="search-wrapper">
+                <label for="searchCheck" class="search-icon">
+                    <img src="./images/glass.png" alt="">
+                </label>
+                <label for="searchCheck" class="search-close-icon"><i class="fa-solid fa-xmark"
+                        style="color:#E42527;"></i></label>
+            </div>
+            <div class="languages">
+                <a href="#" class="text_color lang-trigger"><i class="fa-solid fa-globe"></i> English</a>
+
+                <div class="lang-dropdown">
+                    <div class="angle"></div>
+                    <div class="lang-grid">
+                        <a href="#" class="active text_color"><i class="fa-solid fa-globe"></i> English <i
+                                class="fa-solid fa-check"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i>Español</a>
+                        <a href="#"><img src="./images/portugese.png" alt="">Português (Brasil)</a>
+                        <a href="#"><img src="./images/deutsch.png" alt="">Deutsch</a>
+                        <a href="#"><img src="/images/francais.png" alt="">Français</a>
+                        <a href="#"><img src="./images/nederlands.png" alt="">Nederlands</a>
+                        <a href="#"><img src="./images/circle.png" alt="">日本語</a>
+                        <a href="#"><i class="fa-solid fa-globe"></i>العربية</a>
+                        <a href="#"><img src="./images/indonesia.png" alt="">Bahasa Indonesia</a>
+                        <a href="#"><img src="./images/striped.png" alt="">ภาษาไทย</a>
+                        <a href="#"><img src="./images/viet.png" alt="">Tiếng Việt</a>
+                        <a href="#"><img src="./images/redstar.png" alt="">简体中文</a>
+                        <a href="#"><img src="./images/canada.png" alt="">Français (Canada)</a>
+                        <a href="#"><i class="fa-solid fa-globe"></i>繁體中文</a>
+                        <a href="#"><img src="./images/star" alt="">עברית</a>
+                        <a href="#"><img src="./images/crab.png" alt="">한국어</a>
+                    </div>
+                </div>
+            </div>
+            <a href="./signin.html" class="signin">Sign In</a>
+            <a href="./signup.html" class="signup">Sign Up</a>
+        </div>
+        <div id="searchBar">
+            <div class="search-input-box">
+                <input type="text" placeholder="Search for product overviews, FAQs, and more...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="dev-hero">
+  <div class="dev-header">
+    <div class="dev-logo">Zoho Developer</div>
+    <nav class="nav">
+      <a href="#">AI/ML <span class="new">NEW</span></a>
+      <a href="#">Build ▾</a>
+      <a href="#">Resources</a>
+      <a href="#">Blog</a>
+      <a href="#">Marketplace</a>
+    </nav>
+</div>
+
+  <div class="dev-hero-inner">
+    <div class="dev-left">
+      <h1><span class="grad">Choose</span><br>a tool.</h1>
+      <p>Transform your ideas into solutions. Explore developer tools, platforms, and AI solutions to create apps, integrations, extensions, and autonomous agents for your business.</p>
+      <a href="#" class="btn-red">SIGN UP FOR FREE</a>
+    </div>
+
+    <div class="dev-right">
+      <video src="./images/developervideo.mp4" loop autoplay muted></video>
+    </div>
+  </div>
+</section>
+
+<section class="build-section">
+  <h2><span>&lt;</span> What do you want to build? <span>/&gt;</span></h2>
+  <p class="sub">Zoho Developer helps you build custom apps, integrate systems, and create industry-specific<br>solutions, enhanced with AI to automate work, orchestrate workflows, and deliver smarter,<br>personalized experiences across your business apps.</p>
+
+  <div class="build-grid">
+    <div class="build-card">
+      <h4>Build apps</h4>
+      <p>Create custom apps to address your business needs—anything from a to-do-list app to a bot that can access GitHub repositories.</p>
+      <a href="#">Learn more</a>
+    </div>
+
+    <div class="build-card">
+      <h4>Build integrations</h4>
+      <p>Break data silos by integrating third-party tools with one another or with Zoho.</p>
+      <a href="#">Learn more</a>
+    </div>
+
+    <div class="build-card">
+      <h4>Build extensions</h4>
+      <p>Get more done from your Zoho apps by extending its capabilities. You can also craft unique, custom functionalities for your business on top of Zoho.</p>
+      <a href="#">Learn more</a>
+    </div>
+
+    <div class="build-card">
+      <h4>Build industry solutions</h4>
+      <p>Develop highly customized vertical systems to meet the needs of a specific industry using industry language.</p>
+      <a href="#">Learn more</a>
+    </div>
+
+    <div class="build-card">
+      <h4>Build AI agents and<br>agentic actions</h4>
+      <p>Design AI agents that understand your business context, talk to your data, and take action across Zoho and third-party apps.</p>
+      <div class="double-btn">
+        <a href="#">AI agents</a>
+        <a href="#">Agentic actions</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="choose-tool">
+  <h2><span>&lt;</span> Choose the tool that best<br>fits your needs <span>/ &gt;</span></h2>
+
+  <table class="tool-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>No Code</th>
+        <th>Low Code</th>
+        <th>Pro Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">Apps</td>
+        <td></td>
+        <td><div class="tool"><img src="./images/creator1.png"><span>Creator</span></div></td>
+        <td><div class="tool"><img src="./images/catalyst.png"><span>Catalyst</span></div></td>
+      </tr>
+      <tr>
+        <td class="label">Integrations</td>
+        <td><div class="tool"><img src="./images/flow.png"><span>Flow</span></div></td>
+        <td>
+          <div class="tool-row">
+            <div class="tool"><img src="./images/sigma.png"><span>Sigma</span></div>
+            <div class="tool"><img src="./images/creator1.png"><span>Creator</span></div>
+          </div>
+        </td>
+        <td>
+          <div class="tool-row">
+            <div class="tool"><img src="./images/catalyst.png"><span>Catalyst</span></div>
+            <div class="tool"><img src="./images/phonebridge.png"><span>Qntrl</span></div>
+          </div>
+          <div class="tool mt"><img src="./images/xohoapi.png"><span>Zoho APIs</span></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">Extensions</td>
+        <td></td>
+        <td><div class="tool"><img src="./images/sigma.png"><span>Sigma</span></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="label">Industry<br>Solutions</td>
+        <td></td>
+        <td><div class="tool"><img src="./images/verticaltudio.png"><span>Vertical Studio</span></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="label">Agents</td>
+        <td><div class="tool"><img src="./images/agent.png"><span>AI Agents</span></div></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="label">Agentic<br>Actions</td>
+        <td></td>
+        <td><div class="tool"><img src="./images/mcp.png"><span>MCP</span></div></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="toolbox">
+  <h2 class="toolbox-title"><span>&lt;</span> The developer toolbox <span>/ &gt;</span></h2>
+
+  <div class="toolbox-grid">
+    <!-- NO CODE -->
+    <div class="tb-col">
+      <div class="tb-head">No code <span class="code">&lt;0&gt;</span></div>
+      
+      <div class="tb-card">
+        <img src="./images/flow.png" alt="">
+        <div>
+          <h4>Flow</h4>
+          <p>An integration platform that enables you to connect business apps with hundreds of cloud applications without the need to code.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+
+      <div class="tb-card">
+        <img src="./images/xohoapi.png" alt="">
+        <div>
+          <h4>AI Agents</h4>
+          <p>Create and deploy ready-to-use AI agents that work inside Zoho apps. Supports one-click creation and includes 100+ tools from 50+ apps.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOW CODE -->
+    <div class="tb-col">
+      <div class="tb-head">Low code <span class="code">&lt;--&gt;</span></div>
+
+      <div class="tb-card">
+        <img src="./images/creator1.png" alt="">
+        <div>
+          <h4>Creator</h4>
+          <p>A low-code application development platform with visual builders, Creator empowers you to create web and mobile applications that can scale automatically.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+
+      <div class="tb-card">
+        <img src="./images/sigma.png" alt="">
+        <div>
+          <h4>Sigma</h4>
+          <p>Sigma is an extension development platform which developers can build and host extensions for various Zoho applications. These extensions can be feature enhancements or third-party tool integrations.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+
+      <div class="tb-card">
+        <img src="./images/verticaltudio.png" alt="">
+        <div>
+          <h4>Vertical Studio</h4>
+          <p>A low-code cloud platform that domain experts can leverage to build industry-specific tail solutions.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+
+      <div class="tb-card">
+        <img src="./images/mcp.png" alt="">
+        <div>
+          <h4>MCP (Model Context Protocol)</h4>
+          <p>Turn natural language into real business outcomes by building agent-driven actions across your apps that connect LLMs like GPT to Zoho's APIs, data, and actions, giving AI agents the context and control they need to execute real work.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRO CODE -->
+    <div class="tb-col">
+      <div class="tb-head">Pro code <span class="code">&lt;≡&gt;</span></div>
+
+      <div class="tb-card">
+        <img src="./images/catalyst.png" alt="">
+        <div>
+          <h4>Catalyst by Zoho</h4>
+          <p>A full-stack development platform to build, test, host, deploy and optimize web and mobile apps.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+
+      <div class="tb-card">
+       <img src="./images/phonebridge.png" alt="">
+        <div>
+          <h4>PhoneBridge</h4>
+          <p>Integrate your PBX or contact center with Zoho. Become a PhoneBridge partner to access Zoho PhoneBridge APIs that can help you swiftly build your integration.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+
+      <div class="tb-card">
+        <img src="./images/xohoapi.png" alt="">
+        <div>
+          <h4>Zoho APIs</h4>
+          <p>Build integrations to Zoho using any programming language and infrastructure. Extract or inject data in an XML or JSON format between Zoho and third-party apps.</p>
+          <a href="#">Explore Zoho APIs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Ready to start building?</h2>
+  <a href="#" class="cta-btn">CREATE YOUR DEVELOPER ACCOUNT</a>
+</section>
+
+<section class="monetize-section">
+  <div class="monetize-card">
+    <div class="m-icon"><i class="fa-regular fa-handshake"></i></div>
+    <h3>Interested in monetizing<br>your solutions?</h3>
+    <p>Join our Marketplace partner program to<br>list and sell your solutions on Zoho<br>Marketplace.</p>
+    <a href="#">LEARN MORE</a>
+  </div>
+
+  <div class="monetize-card">
+    <div class="m-icon"><i class="fa-solid fa-rotate"></i></div>
+    <h3>White label apps</h3>
+    <p>Rebrand Zoho to reflect your brand<br>identity. Ideal for independent software<br>vendors (ISVs), solution developers, and<br>consultants who require a faster time to<br>market.</p>
+    <a href="#">LEARN MORE</a>
+  </div>
+</section>
+
+<footer class="zoho-footer">
+  <div class="footer-top">
+    <a href="mailto:support@zoho.com" class="support-mail"><i class="fa-regular fa-envelope"></i> support@zoho.com</a>
+  </div>
+
+  <div class="footer-search-row">
+    <div class="f-search">
+      <input type="text" placeholder="Search for product overviews, FAQs, and more...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="f-lang">
+      <i class="fa-solid fa-globe"></i>
+      <span>English</span>
+      <i class="fa-solid fa-caret-down"></i>
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">Contact Us</a> <span>|</span>
+    <a href="#">Security</a> <span>|</span>
+    <a href="#">Compliance</a> <span>|</span>
+    <a href="#">IPR Complaints</a> <span>|</span>
+    <a href="#">Anti-spam Policy</a> <span>|</span>
+    <a href="#">Terms of Service</a> <span>|</span>
+    <a href="#">Privacy Policy</a> <span>|</span>
+    <a href="#">Refund Policy</a> <span>|</span>
+    <a href="#">Trademark Policy</a> <span>|</span>
+    <a href="#">Cookie Policy</a> <span>|</span>
+    <a href="#">GDPR Compliance</a> <span>|</span>
+    <a href="#">Abuse Policy</a>
+  </div>
+
+  <div class="footer-copy">© 2026, Zoho Corporation Pvt. Ltd. All Rights Reserved.</div>
+</footer>

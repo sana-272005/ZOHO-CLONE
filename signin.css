@@ -1,0 +1,666 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+ }
+
+ @font-face {
+     font-family: "Zoho_Puvi_Regular";
+     src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.eot");
+     src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.otf") format("opentype");
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap
+ }
+
+ @font-face {
+     font-family: "robotoslablight";
+     src: url(https://static.zohocdn.com/webfonts/robotoslablight/font.eot);
+     src: url(https://static.zohocdn.com/webfonts/robotoslablight/font.eot?#iefix) format("eot"), url(https://static.zohocdn.com/webfonts/robotoslablight/font.woff2) format("woff2"), url(https://static.zohocdn.com/webfonts/robotoslablight/font.woff) format("woff"), url(https://static.zohocdn.com/webfonts/robotoslablight/font.ttf) format("truetype"), url(https://static.zohocdn.com/webfonts/robotoslablight/font.svg#RobotoSlab-Light) format("svg");
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap
+ }
+
+ body {
+     font-family: 'Zoho_Puvi_Regular', sans-serif;
+     background: #f8f8f8;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+ }
+
+ .main {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 40px 20px;
+ }
+
+ .card {
+     width: 900px;
+     max-width: 100%;
+     background: #fff;
+     border-radius: 8px;
+     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+     display: flex;
+     overflow: hidden;
+ }
+
+ .left,
+ .right {
+     width: 50%;
+     padding: 36px 32px;
+ }
+
+ .right {
+     background: #fcfcfc;
+     border-left: 1px solid #f0f0f0;
+     display: block ;
+     text-align: center;
+     overflow: hidden;
+     position: relative;
+ }
+
+ .slider {
+     position: relative;
+     width: 100%;
+     height: 420px;
+ }
+
+ .slide {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     opacity: 0;
+     pointer-events: none;
+     animation: slideShow 4s infinite;
+ }
+
+ .slide img {
+     width: 75%;
+     max-width: 300px;
+     margin: 0 auto;
+     display: block;
+ }
+
+ .slide h3,
+ .slide h5 {
+     font-size: 17px;
+     margin: 20px 0 8px;
+     color: #000;
+ }
+
+ .slide p {
+     font-size: 13px;
+     color: #666;
+     max-width: 320px;
+     margin: 0 auto;
+     line-height: 1.5;
+ }
+
+ .s1 {
+     animation-delay: 0s;
+ }
+
+ .s2 {
+     animation-delay: 2s;
+ }
+
+ @keyframes slideShow {
+     0% {
+         opacity: 0;
+     }
+
+     5% {
+         opacity: 1;
+         pointer-events: auto;
+     }
+
+     45% {
+         opacity: 1;
+         pointer-events: auto;
+     }
+
+     50% {
+         opacity: 0;
+         pointer-events: none;
+     }
+
+     100% {
+         opacity: 0;
+         pointer-events: none;
+     }
+ }
+
+ /* dots */
+ .dots {
+     display: flex;
+     gap: 6px;
+     justify-content: center;
+     margin-top: 20px;
+ }
+
+ .dots span {
+     width: 18px;
+     height: 4px;
+     background: #d0e6ff;
+     border-radius: 10px;
+     animation: dotActive 4s infinite;
+ }
+
+ .dots .d1 {
+     animation-delay: 0s;
+ }
+
+ .dots .d2 {
+     animation-delay: 2s;
+ }
+
+ @keyframes dotActive {
+     0% {
+         background: #0b85f5;
+     }
+
+     45% {
+         background: #0b85f5;
+     }
+
+     50% {
+         background: #d0e6ff;
+     }
+
+     100% {
+         background: #d0e6ff;
+     }
+ }
+
+ .chain {
+     display: flex;
+     align-items: center;
+     position: relative;
+     width: 150px;
+     height: 82px;
+ }
+
+ .box {
+     width: 33px;
+     height: 33px;
+     border: 3.5px solid;
+     border-radius: 7px;
+     position: absolute;
+     background: transparent;
+ }
+
+ .red {
+     border-color: #E42527;
+     transform: rotateZ(-10deg);
+     z-index: 1;
+ }
+
+ .green {
+     border-color: #089949;
+     left: 29px;
+     z-index: 2;
+     transform: rotateZ(19deg);
+ }
+
+ .blue {
+     border-color: #226DB4;
+     left: 57px;
+     z-index: 3;
+     transform: rotateZ(-10deg);
+ }
+
+ .yellow {
+     border-color: #F9B21D;
+     left: 83px;
+     z-index: 4;
+ }
+
+ .zoho-text {
+     font-family: Arial, sans-serif;
+     font-weight: bolder;
+     font-size: 8px;
+     letter-spacing: 7px;
+     color: #000;
+     margin-left: 24%;
+     margin-top: -12%;
+ }
+
+ .top-row {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 18px;
+ }
+
+ .smart-btn {
+     background: #2f49d0;
+     color: #fff;
+     border: none;
+     padding: 9px 16px;
+     border-radius: 20px;
+     font-size: 13px;
+     font-weight: 500;
+     display: flex;
+     align-items: center;
+     gap: 6px;
+     cursor: pointer;
+ }
+
+ .left h2 {
+     font-size: 26px;
+     font-weight: 600;
+     color: #000;
+ }
+
+ .left p.sub {
+     font-size: 14px;
+     color: #555;
+     margin: 6px 0 22px;
+ }
+
+ .input-box {
+     width: 100%;
+     border: 1px solid #e0e0e0;
+     border-radius: 4px;
+     background: #f9f9f9;
+     padding: 12px 14px;
+     margin-bottom: 18px;
+ }
+
+ .input-box input {
+     width: 100%;
+     border: none;
+     outline: none;
+     background: transparent;
+     font-size: 14px;
+ }
+
+ .next-btn {
+     width: 100%;
+     background: #0b85f5;
+     color: #fff;
+     border: none;
+     padding: 12px;
+     border-radius: 4px;
+     font-size: 15px;
+     font-weight: 600;
+     cursor: pointer;
+ }
+
+ .next-btn:hover {
+     background: #0779e0;
+ }
+
+ .sign-options {
+     margin-top: 26px;
+ }
+
+ .sign-options span {
+     font-size: 14px;
+     font-weight: 600;
+ }
+
+ .socials {
+     display: flex;
+     gap: 8px;
+     margin-top: 12px;
+     flex-wrap: wrap;
+ }
+
+ .socials a {
+     width: 42px;
+     height: 42px;
+     border-radius: 6px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     font-size: 18px;
+     border: 1px solid #eee;
+ }
+
+ .s-g {
+     color: #db4437;
+     background: #fff;
+ }
+
+ .s-f {
+     background: #1877f2;
+     color: #fff;
+ }
+
+ .s-in {
+     background: #0a66c2;
+     color: #fff;
+ }
+
+ .s-x {
+     background: #000;
+     color: #fff;
+ }
+
+ .s-a {
+     background: #000;
+     color: #fff;
+ }
+
+ .s-m {
+     background: #222;
+     color: #fff;
+ }
+
+ .s-z {
+     background: #ffeb3b;
+     color: #000;
+ }
+
+ .s-more {
+     background-color: #f5f5f5;
+     color: #888;
+     font-size: 20px;
+ }
+
+ .bottom-text {
+     margin-top: 28px;
+     font-size: 13px;
+     color: #555;
+ }
+
+ .bottom-text a {
+     color: #0b85f5;
+     text-decoration: none;
+     font-weight: 600;
+ }
+
+ .right h3 {
+     font-size: 17px;
+     font-weight: 600;
+     margin-bottom: 10px;
+ }
+
+ .right p {
+     font-size: 13px;
+     color: #666;
+     line-height: 1.5;
+     max-width: 320px;
+ }
+
+ .learn {
+     margin-top: 18px;
+     padding: 8px 18px;
+     background: #eaf4ff;
+     color: #0b85f5;
+     border: none;
+     border-radius: 20px;
+     font-size: 13px;
+     font-weight: 600;
+     cursor: pointer;
+ }
+
+ footer {
+     text-align: center;
+     font-size: 12px;
+     color: #888;
+     padding: 14px;
+ }
+
+ .dots {
+     display: flex;
+     gap: 6px;
+     margin-top: 28px;
+ }
+
+ .dots span {
+     width: 18px;
+     height: 4px;
+     background: #d0e6ff;
+     border-radius: 10px;
+ }
+
+ .dots span.active {
+     background: #0b85f5;
+ }
+
+ @media (max-width: 575.99px) {
+  body {
+    background: #fff;
+  }
+
+  .main {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 100% ;
+    box-shadow: none ;
+    border-radius: 0 ;
+    flex-direction: column ;
+  }
+
+  .left {
+    width: 100% ;
+    padding: 16px 20px 10px ;
+  }
+
+  .right {
+    display: none ;
+  }
+
+  /* top row - logo left, smart btn right */
+  .top-row {
+    margin-bottom: 28px;
+  }
+
+  .chain {
+    width: 110px;
+    height: 38px;
+  }
+
+  .box {
+    width: 26px;
+    height: 26px;
+    border-width: 3px;
+    border-radius: 5px;
+  }
+
+  .box.red { left: 0; }
+  .box.green { left: 22px; }
+  .box.blue { left: 44px; }
+  .box.yellow { left: 66px; }
+
+  .zoho-text {
+    font-size: 6px;
+    letter-spacing: 5px;
+    margin-left: 21%;
+    margin-top: -3%;
+  }
+
+  .smart-btn {
+    background: #2433b0;
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .left h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .left p.sub {
+    font-size: 14px;
+    margin: 0 0 28px;
+    color: #333;
+  }
+
+  /* Email input - only bottom border like screenshot */
+  .input-box {
+    background: transparent ;
+    border: none ;
+    border-bottom: 1px solid #0b85f5 ;
+    border-radius: 0 ;
+    padding: 8px 2px 10px ;
+    margin-bottom: 22px ;
+  }
+
+  .input-box input {
+    font-size: 15px ;
+  }
+
+  .input-box input::placeholder {
+    color: #999;
+  }
+
+  .next-btn {
+    border-radius: 4px ;
+    padding: 13px ;
+    font-size: 15px ;
+    font-weight: 600 ;
+  }
+
+  .sign-options {
+    margin-top: 22px;
+  }
+
+  .sign-options span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .socials {
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .socials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 4px;
+  }
+
+  .bottom-text {
+    margin-top: 22px;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .bottom-text a {
+    font-weight: 700;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding: 20px 10px 10px;
+    font-size: 11px;
+  }
+}
+
+/* 576px to 767.99px */
+@media (min-width: 576px) and (max-width: 767.99px) {
+  body {
+    background: #f5f6f8;
+  }
+
+  .main {
+    padding: 30px 16px;
+    align-items: center;
+  }
+
+  .card {
+    width: 480px ;
+    max-width: 95% ;
+    flex-direction: column ;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08) ;
+    border-radius: 10px ;
+  }
+
+  .left {
+    width: 100% ;
+    padding: 28px 32px 32px ;
+  }
+
+  .right {
+    display: none ;
+  }
+
+  .top-row {
+    margin-bottom: 24px;
+  }
+
+  .chain { width: 110px; height: 38px; }
+  .box { width: 26px; height: 26px; border-width: 3px; }
+  .box.red { left: 0; }
+  .box.green { left: 22px; }
+  .box.blue { left: 44px; }
+  .box.yellow { left: 66px; }
+  .zoho-text { font-size: 6px; letter-spacing: 5px; margin-left: 21%; margin-top: -8%; }
+
+  .left h2 { font-size: 24px; font-weight: 700; }
+  .left p.sub { font-size: 14px; margin: 2px 0 22px; }
+
+  /* gray box input like screenshot */
+  .input-box {
+    background: #f5f5f7 ;
+    border: 1px solid #e8e8e8 ;
+    border-radius: 4px ;
+    padding: 12px 14px ;
+  }
+
+  .next-btn { padding: 12px ; }
+
+  .bottom-text { text-align: left; }
+}
+
+/* 768px to 991.99px */
+@media (min-width: 768px) and (max-width: 991.99px) {
+  body {
+    background: #f5f6f8;
+  }
+
+  .main {
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+  .card {
+    width: 520px ;
+    max-width: 90% ;
+    flex-direction: column ;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08) ;
+    border-radius: 12px ;
+  }
+
+  .left {
+    width: 100% ;
+    padding: 32px 36px 36px ;
+  }
+
+  .right {
+    display: none ;
+  }
+
+  .top-row {
+    margin-bottom: 26px;
+  }
+
+  .left h2 { font-size: 26px; font-weight: 700; }
+  .left p.sub { margin-bottom: 24px; }
+
+  .input-box {
+    background: #f5f5f7 ;
+    border: 1px solid #e8e8e8 ;
+    border-radius: 4px ;
+    padding: 13px 14px ;
+  }
+}
