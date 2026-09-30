@@ -27,7 +27,7 @@ body {
     overflow-x: hidden;
 }
 .footer-nav-container {
-  display: none;
+  display:none;
 }
 #prodCheck,
 #solCheck,
